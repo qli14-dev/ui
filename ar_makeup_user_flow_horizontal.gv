@@ -1,0 +1,117 @@
+// AR Makeup User Flow - Horizontal
+digraph {
+	rankdir=LR
+	node [fontname=Arial fontsize=14 margin="0.3,0.2" shape=box style="rounded,filled"]
+	graph [dpi=96 nodesep=1.0 pad=1.0 ranksep=2.5 splines=ortho]
+	edge [fontsize=11]
+	start [label=Start fillcolor="#C8E6C9" height=0.8 shape=ellipse style=filled width=2.0]
+	open_app [label="Open App" fillcolor="#FFD4A3" height=0.8 shape=box style="rounded,filled" width=2.0]
+	welcome [label="Welcome Screen" fillcolor="#FFD4A3" height=0.8 shape=box style="rounded,filled" width=2.0]
+	splash [label="Splash Screen" fillcolor="#C8E6C9" height=0.8 shape=ellipse style=filled width=2.0]
+	perm_req [label="Permission Request" fillcolor="#FFD4A3" height=0.8 shape=box style="rounded,filled" width=2.0]
+	cam_access [label="Camera Access" fillcolor="#C8E6C9" height=0.8 shape=ellipse style=filled width=2.0]
+	first_time [label="First Time User?" fillcolor="#BBDEFB" height=1.2 shape=diamond style=filled width=2.2]
+	tutorial [label="Tutorial (Optional)" fillcolor="#FFD4A3" height=0.8 shape=box style="rounded,filled" width=2.0]
+	skip_tut [label="Skip Tutorial" fillcolor="#FFD4A3" height=0.8 shape=box style="rounded,filled" width=2.0]
+	view_tut [label="View Tutorial" fillcolor="#FFD4A3" height=0.8 shape=box style="rounded,filled" width=2.0]
+	tut_shown [label="Tutorial Shown" fillcolor="#C8E6C9" height=0.8 shape=ellipse style=filled width=2.0]
+	tut_comp [label="Tutorial Complete" fillcolor="#C8E6C9" height=0.8 shape=ellipse style=filled width=2.0]
+	nav_home [label="Navigate to Home" fillcolor="#FFD4A3" height=0.8 shape=box style="rounded,filled" width=2.0]
+	home [label="Home Screen" fillcolor="#C8E6C9" height=0.8 shape=ellipse style=filled width=2.0]
+	ar_home [label="Home Screen" fillcolor="#C8E6C9" height=0.8 shape=ellipse style=filled width=2.0]
+	try_on [label="Try On" fillcolor="#C8E6C9" height=0.8 shape=ellipse style=filled width=2.0]
+	select_cat [label="Select Category" fillcolor="#FFD4A3" height=0.8 shape=box style="rounded,filled" width=2.0]
+	cat_shown [label="Categories Shown" fillcolor="#C8E6C9" height=0.8 shape=ellipse style=filled width=2.0]
+	select_prod [label="Select Product" fillcolor="#FFD4A3" height=0.8 shape=box style="rounded,filled" width=2.0]
+	prod_list [label="Product List Shown" fillcolor="#C8E6C9" height=0.8 shape=ellipse style=filled width=2.0]
+	face_detect [label="Face Detection & Tracking" fillcolor="#FFD4A3" height=0.8 shape=box style="rounded,filled" width=2.0]
+	apply_makeup [label="Apply Makeup Effect" fillcolor="#FFD4A3" height=0.8 shape=box style="rounded,filled" width=2.0]
+	real_time [label="Real-time AR View" fillcolor="#C8E6C9" height=0.8 shape=ellipse style=filled width=2.0]
+	adjust [label="Adjust?" fillcolor="#BBDEFB" height=1.2 shape=diamond style=filled width=2.2]
+	intensity [label="Adjust Intensity" fillcolor="#FFD4A3" height=0.8 shape=box style="rounded,filled" width=2.0]
+	color [label="Change Color" fillcolor="#FFD4A3" height=0.8 shape=box style="rounded,filled" width=2.0]
+	updated [label="Effect Updated" fillcolor="#C8E6C9" height=0.8 shape=ellipse style=filled width=2.0]
+	satisfied [label="Satisfied?" fillcolor="#BBDEFB" height=1.2 shape=diamond style=filled width=2.2]
+	back_prod [label="Back to Product" fillcolor="#FFD4A3" height=0.8 shape=box style="rounded,filled" width=2.0]
+	capture [label="Capture/Record?" fillcolor="#BBDEFB" height=1.2 shape=diamond style=filled width=2.2]
+	take_photo [label="Take Photo" fillcolor="#FFD4A3" height=0.8 shape=box style="rounded,filled" width=2.0]
+	record_video [label="Record Video" fillcolor="#FFD4A3" height=0.8 shape=box style="rounded,filled" width=2.0]
+	photo_saved [label="Photo Saved" fillcolor="#C8E6C9" height=0.8 shape=ellipse style=filled width=2.0]
+	video_saved [label="Video Saved" fillcolor="#C8E6C9" height=0.8 shape=ellipse style=filled width=2.0]
+	share_q [label="Share?" fillcolor="#BBDEFB" height=1.2 shape=diamond style=filled width=2.2]
+	share_opts [label="Share Options" fillcolor="#FFD4A3" height=0.8 shape=box style="rounded,filled" width=2.0]
+	shared [label="Shared to Social Media" fillcolor="#C8E6C9" height=0.8 shape=ellipse style=filled width=2.0]
+	save_gal [label="Save to Gallery" fillcolor="#FFD4A3" height=0.8 shape=box style="rounded,filled" width=2.0]
+	saved_gal [label="Saved to Device" fillcolor="#C8E6C9" height=0.8 shape=ellipse style=filled width=2.0]
+	add_cart [label="Add to Cart" fillcolor="#FFD4A3" height=0.8 shape=box style="rounded,filled" width=2.0]
+	view_prod [label="View Product Details" fillcolor="#FFD4A3" height=0.8 shape=box style="rounded,filled" width=2.0]
+	prod_detail [label="Product Info Shown" fillcolor="#C8E6C9" height=0.8 shape=ellipse style=filled width=2.0]
+	buy_q [label="Purchase?" fillcolor="#BBDEFB" height=1.2 shape=diamond style=filled width=2.2]
+	checkout [label="Checkout Process" fillcolor="#FFD4A3" height=0.8 shape=box style="rounded,filled" width=2.0]
+	payment [label="Payment Gateway" fillcolor="#FFD4A3" height=0.8 shape=box style="rounded,filled" width=2.0]
+	confirm [label="Order Confirmation" fillcolor="#FFD4A3" height=0.8 shape=box style="rounded,filled" width=2.0]
+	order_placed [label="Order Placed" fillcolor="#C8E6C9" height=0.8 shape=ellipse style=filled width=2.0]
+	continue_q [label="Continue Browsing?" fillcolor="#BBDEFB" height=1.2 shape=diamond style=filled width=2.2]
+	back_home [label="Back to Home" fillcolor="#FFD4A3" height=0.8 shape=box style="rounded,filled" width=2.0]
+	exit [label="Exit App" fillcolor="#FFD4A3" height=0.8 shape=box style="rounded,filled" width=2.0]
+	end [label=End fillcolor="#C8E6C9" height=0.8 shape=ellipse style=filled width=2.0]
+	start -> open_app
+	open_app -> welcome
+	welcome -> splash
+	splash -> perm_req
+	perm_req -> cam_access
+	cam_access -> first_time
+	first_time -> tutorial [label=Yes]
+	first_time -> home [label=No]
+	tutorial -> skip_tut
+	tutorial -> view_tut
+	skip_tut -> tut_comp
+	view_tut -> tut_shown
+	tut_shown -> tut_comp
+	tut_comp -> nav_home
+	nav_home -> ar_home
+	home -> ar_home
+	ar_home -> try_on
+	try_on -> select_cat
+	select_cat -> cat_shown
+	cat_shown -> select_prod
+	select_prod -> prod_list
+	prod_list -> face_detect
+	face_detect -> apply_makeup
+	apply_makeup -> real_time
+	real_time -> adjust
+	adjust -> intensity [label=Yes]
+	adjust -> satisfied [label=No]
+	intensity -> color
+	color -> updated
+	updated -> real_time
+	satisfied -> back_prod [label=No]
+	satisfied -> capture [label=Yes]
+	back_prod -> select_prod
+	capture -> take_photo [label=Photo]
+	capture -> record_video [label=Video]
+	capture -> add_cart [label=Skip]
+	take_photo -> photo_saved
+	record_video -> video_saved
+	photo_saved -> share_q
+	video_saved -> share_q
+	share_q -> share_opts [label=Yes]
+	share_q -> save_gal [label=No]
+	share_opts -> shared
+	shared -> save_gal
+	save_gal -> saved_gal
+	saved_gal -> add_cart
+	add_cart -> view_prod
+	view_prod -> prod_detail
+	prod_detail -> buy_q
+	buy_q -> checkout [label=Yes]
+	buy_q -> continue_q [label=No]
+	checkout -> payment
+	payment -> confirm
+	confirm -> order_placed
+	order_placed -> continue_q
+	continue_q -> back_home [label=Yes]
+	continue_q -> exit [label=No]
+	back_home -> ar_home
+	exit -> end
+}
